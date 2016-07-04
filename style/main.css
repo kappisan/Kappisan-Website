@@ -1,0 +1,147 @@
+html {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#title-bar {
+    height: 120px;
+    top: 0;
+    left: 0px;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ed1c24;
+    padding-left: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+
+#main-logo {
+  width: 280px;
+}
+
+#small-logo {
+  width: 80px;
+  float: right;
+  margin: 10px 50px 0 0;
+}
+
+#first-section {
+    padding-top: 150px;
+    padding-left: 20px;
+    min-height: 500px;
+    background-color: #f7f6f5;
+}
+
+#first-section h1 {
+    color: #ed1c24;
+    font-weight: bold;
+}
+
+#second-section {
+    background-color: #ed1c24;
+    min-height: 200px; 
+    color: #fff;
+    padding: 20px;
+}    
+
+#footer-section {
+    min-height: 200px; 
+    padding: 20px;
+}
+
+.release {
+    width: 100%;
+    height: 400px;
+}
+
+.release .release-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.release .release-title:hover {
+    cursor: pointer;
+}    
+
+.release-thumbnail {
+    cursor: pointer;
+}
+
+.release-text {
+    float: left;
+    margin-left: 30px;
+}
+
+/* mouse over image effects */
+.release figure {
+    width: 350px;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ed1c24;
+    float: left;
+
+}
+.release figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+.release img {
+    width: 350px;
+}
+
+.release figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.release figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+.play-now-button {
+    width: 200px;
+    height: 60px;
+    color: #FFF;
+    background-color: #ed1c24;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.play-now-button:hover {
+    cursor: pointer;
+}
