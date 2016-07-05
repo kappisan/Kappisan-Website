@@ -12,6 +12,12 @@ a {
     text-decoration: none;
 }
 
+a:link {
+  color: #000;
+  text-decoration: inherit; /* no underline */
+}
+
+
 a:hover {
   color: inherit;
   text-decoration: inherit;
