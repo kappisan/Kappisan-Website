@@ -9,6 +9,8 @@
     <link href="./style/main.css" rel="stylesheet" type="text/css">
     <link rel='shortcut icon' href='http://www.kappisan.com.s3-website-eu-west-1.amazonaws.com/img/logo5.png' type='image/x-icon'/ >
 
+    <meta name="google-site-verification" content="mUsB3A1eANx162BIxCmooyjMifabYoniSQiQlP7xfBg" />
+
     <script type="text/javascript" src="./libs/angular.min.js"></script>
     <script type="text/javascript" src="./libs/angular-route.min.js"></script>
     <script type="text/javascript" src="./libs/jquery.min.js"></script>
@@ -18,12 +20,37 @@
 
 <body ng-app="app" ng-controller="PageCtrl">
 
+
+    <!-- facebook api stuff -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1552594118383602',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- /facebook api stuff -->
+
+
     <div id="title-bar">
         <a href="#/"><img id="main-logo" src="./img/logo1.png"></a>
         <a href="#/"><img id="small-logo" src="./img/logo5.png"></a>
     </div>
 
     <div id="container" ng-view></div>
+
+
+
 
     <!-- google adsense -->
     <center>
