@@ -5,17 +5,22 @@
     <link rel='shortcut icon' href='http://www.kappisan.com.s3-website-eu-west-1.amazonaws.com/img/logo5.png' type='image/x-icon'/ >
 
 
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <title>kappisan</title>
     <meta content="" name="description">
     <meta content="Kappisan,Games" name="keywords">
+    <meta charset="UTF-8">
     
     <!-- facebook meta data -->
     <meta property="og:title" content="kappisan" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.kappisan.com" />
     <meta property="og:image" content="http://www.kappisan.com/img/logo_rectangle.png" />
+
+    <!-- twitter meta data -->
+    <meta name="twitter:card" content="kappisan" />
+    <meta name="twitter:site" content="@kappisan_" />
+    <meta name="twitter:creator" content="@kappisan_" />
 
 
     <meta name="google-site-verification" content="mUsB3A1eANx162BIxCmooyjMifabYoniSQiQlP7xfBg" />
@@ -25,6 +30,7 @@
 
 
     <link href="./style/main.css" rel="stylesheet" type="text/css">
+    <link href="./libs/hover.css" rel="stylesheet" media="all">
 
     <script type="text/javascript" src="./libs/angular.min.js"></script>
     <script type="text/javascript" src="./libs/angular-route.min.js"></script>
@@ -58,8 +64,8 @@
 
 
     <div id="title-bar">
-        <a href="#/"><img id="main-logo" src="./img/logo1.png"></a>
-        <a href="#/"><img id="small-logo" src="./img/logo5.png"></a>
+        <a href="#/"><img id="main-logo" class="hvr-pulse" src="./img/logo1.png"></a>
+        <a href="#/"><img id="small-logo" class="hvr-pulse" src="./img/logo5.png"></a>
     </div>
 
     <div id="container" ng-view></div>
@@ -85,10 +91,10 @@
     <div id="footer-section">
         <center>
         <div>
-            <a href="https://www.facebook.com/kappisan1/" target="_blank"><img src="./img/facebook-icon.png"></a>
-            <a href="https://www.linkedin.com/company/kappisan" target="_blank"><img src="./img/linkedin-icon.png"></a>
-            <a href="https://www.youtube.com/channel/UCVGDM4PR19B7upYv_0A8uaA" target="_blank"><img src="./img/youtube-icon.png"></a>
-            <a href="https://twitter.com/kappisan_" target="_blank"><img src="./img/twitter-icon.png"></a>
+            <a class="social-media-icon hvr-bounce-in" href="https://www.facebook.com/kappisan1/" target="_blank"><img src="./img/facebook-icon.png"></a>
+            <a class="social-media-icon hvr-bounce-in" href="https://www.linkedin.com/company/kappisan" target="_blank"><img src="./img/linkedin-icon.png"></a>
+            <a class="social-media-icon hvr-bounce-in" href="https://www.youtube.com/channel/UCVGDM4PR19B7upYv_0A8uaA" target="_blank"><img src="./img/youtube-icon.png"></a>
+            <a class="social-media-icon hvr-bounce-in" href="https://twitter.com/kappisan_" target="_blank"><img src="./img/twitter-icon.png"></a>
         </div>
         </center>
         
