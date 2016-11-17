@@ -1,3 +1,46 @@
+@font-face {
+    font-family: coolvetica;
+    src: url(./coolvetica.ttf);
+}
+
+.title-banner {
+    height: 40px;
+    padding: 0 50px 5px 50px;
+    font-family: coolvetica;
+    font-weight: 700;
+    font-size: 36px;
+    animation: pulse 45s alternate infinite;
+}
+
+@keyframes pulse {
+  0% {background-color: #8c0000;}
+  25% {background-color: #13523d;}
+  50% {background-color: #ad637c;}
+  75% {background-color: #30333c;}
+  100% {background-color: #470d42;}
+}
+
+
+
+
+.selfie-photo {
+  position: relative;
+    word-wrap: normal;
+    left: 20px;
+  display: inline-block;
+}
+
+.right-text {
+    display: inline-block;
+    position: relative;
+    top: -340px;
+}
+
+
+
+
+
+
 /* -------------------------------- 
 
 Primary style
@@ -23,6 +66,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-family: coolvetica;
+}
+
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
@@ -44,12 +91,14 @@ Menu trigger
 .cd-nav-trigger {
   position: absolute;
   z-index: 4;
-  top: 24px;
+  top: 64px;
   right: 5%;
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+
+  animation: pulse 45s alternate infinite;
+
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
@@ -444,13 +493,12 @@ Projects
   transition: transform 0.3s 0.3s;
 }
 .cd-project-title h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   line-height: 1.5;
-  font-weight: 700;
 }
 .cd-project-title p {
   font-size: 1.4rem;
-  font-family: "Merriweather", serif;
+  font-family: coolvetica;
   font-style: ;
   line-height: 1.2;
   padding: .4em 2em;
@@ -719,7 +767,8 @@ li.selected .cd-project-title,
   -moz-osx-font-smoothing: grayscale;
 }
 .no-touch .cd-primary-nav a:hover {
-  background-color: #a8ae7e;
+  animation: pulse 10s alternate infinite;
+
 }
 .cd-primary-nav .cd-label {
   position: relative;
