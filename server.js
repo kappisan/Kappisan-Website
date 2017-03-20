@@ -17,4 +17,4 @@ server = app.listen(PORT);
 var host = server.address().address
 var port = server.address().port
 
-console.log("kwilkosz server listening on port %s", port);
+console.log("kappisan server listening on port %s", port);
