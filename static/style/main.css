@@ -87,6 +87,7 @@ h1, h2 {
     height: 500px;
     background-image: url(../img/coding-facebook.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #first-section {
@@ -113,11 +114,17 @@ h1, h2 {
     padding: 20px;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }   
+
+.ad-container {
+    height: 100px;
+    background-color: #231f20;
+}
 
 #footer-section {
     min-height: 200px;
-    padding: 20px;
+    padding: 40px;
     background-color: #231f20;
     color: #fff;
 }
