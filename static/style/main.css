@@ -88,24 +88,24 @@ p {
     background-attachment: fixed;
 }
 
-#first-section {
+.first-section {
     padding: 20px;
     min-height: 500px;
 }
 
-#first-section h1 {
+.first-section h1 {
     color: #ed1c24;
     font-weight: bold;
 }
 
-#second-section {
+.second-section {
     background-color: #ed1c24;
     min-height: 200px; 
     color: #fff;
     padding: 20px;
 }    
 
-#third-section {
+.third-section {
     background-image: url(../img/coding-bg.png);
     min-height: 460px;
     color: #fff;
