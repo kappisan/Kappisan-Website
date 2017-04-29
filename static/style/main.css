@@ -66,6 +66,14 @@ p {
     z-index: 99;
 }
 
+.services-link {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    color: #fff !important;
+    font-size: 36px;
+}
+
 .main-logo {
   width: 280px;
 }
