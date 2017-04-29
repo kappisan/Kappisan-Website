@@ -147,6 +147,7 @@ p {
 .me-pic {
     width: 200px;
     border-radius: 150px;
+    float: left;
 }
 
 .release {
