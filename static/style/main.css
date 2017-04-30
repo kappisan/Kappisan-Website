@@ -98,7 +98,6 @@ p {
 
 .first-section {
     padding: 20px;
-    min-height: 500px;
 }
 
 .first-section h1 {
@@ -126,6 +125,7 @@ p {
 .ad-container {
     height: 100px;
     background-color: #231f20;
+    padding: 10px 0 0 0;
 }
 
 #footer-section {
@@ -158,28 +158,6 @@ p {
     float: left;
 }
 
-.release {
-    width: 350px;
-    height: 580px;
-    display: inline-block;
-    background-color: #fff;
-    margin: 20px;
-}
-
-.release .release-title {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 2px 6px;
-}
-
-.fb-like-section,
-.releases-container,
-.about-company-container,
-.about-me-container {
-    max-width: 1180px;
-    margin: auto;
-}
-
 #container {
     background-color: #eee;
 }
@@ -202,21 +180,9 @@ p {
 }
 
 /* mouse over image effects */
-.release figure {
-    max-width: 350px;
-    height: 280px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-}
 .release figure:hover+span {
     bottom: -36px;
     opacity: 1;
-}
-
-.release img {
-    width: 350px;
 }
 
 .release figure img {
@@ -258,4 +224,83 @@ p {
 
 .about-company-p {
     text-align: justify;   
+}
+
+
+
+@media (max-width : 1220px) {
+
+    .fb-like-section,
+    .releases-container,
+    .about-company-container,
+    .about-me-container {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    .release {
+        width: 420px;
+        height: 580px;
+        display: inline-block;
+        background-color: #fff;
+        margin: 20px;
+    }
+
+    .release .release-title {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2px 6px;
+    }
+
+    .release figure {
+        max-width: 420px;
+        height: 280px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .release img {
+        width: 420px;
+    }
+
+}
+
+
+@media (min-width : 1220px) {
+
+    .fb-like-section,
+    .releases-container,
+    .about-company-container,
+    .about-me-container {
+        max-width: 1180px;
+        margin: auto;
+    }
+
+    .release {
+        width: 350px;
+        height: 580px;
+        display: inline-block;
+        background-color: #fff;
+        margin: 20px;
+    }
+
+    .release .release-title {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2px 6px;
+    }
+
+    .release figure {
+        max-width: 350px;
+        height: 280px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .release img {
+        width: 350px;
+    }
+
 }
