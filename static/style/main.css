@@ -179,6 +179,10 @@ p {
     margin: 50px 20px;
 }
 
+.release-full {
+    display: inline-flex
+}
+
 /* mouse over image effects */
 .release figure:hover+span {
     bottom: -36px;

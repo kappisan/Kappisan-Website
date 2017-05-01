@@ -5,20 +5,14 @@ var app = angular.module('app', ['ngRoute'])
 			.when('/about', { templateUrl: 'templates/about.html' })
 			.when('/services', { templateUrl: 'templates/services.html' })
 			.when('/justynas_christmas_chaos', { templateUrl: 'templates/justynas_christmas_chaos.html' })
-			.when('/twistfour', { templateUrl: 'templates/twistfour.html' })
 			.otherwise({ redirectTo: '/' });
 	}]);
 
 
 // CONTROLLERS
-
-
 app.controller('PageCtrl', ['$scope', '$http', '$location', function($s, $http, $location) {
 
 	console.log("location", $location.$$path);
-	$s.currentPage = $location.$$path;
-
-
 
 	$s.changeCurrentPage = function(page) {
 		console.log("change", page);
@@ -41,20 +35,19 @@ app.controller('PageCtrl', ['$scope', '$http', '$location', function($s, $http, 
 		}
 	}
 
-$( document ).ready(function() {
+	$( document ).ready(function() {
 
-	if($location.$$path== "/about") {
-		$('#nav-menu-about').addClass('active');
-	}
-	if($location.$$path== "/work_experience") {
-		$('#nav-menu-work').addClass('active');
-	}
-	if($location.$$path== "/skills") {
-		$('#nav-menu-skills').addClass('active');
-		console.log("matched");
-	}
-});
-
+		if($location.$$path== "/about") {
+			$('#nav-menu-about').addClass('active');
+		}
+		if($location.$$path== "/work_experience") {
+			$('#nav-menu-work').addClass('active');
+		}
+		if($location.$$path== "/skills") {
+			$('#nav-menu-skills').addClass('active');
+			console.log("matched");
+		}
+	});
 
 }]);
 
