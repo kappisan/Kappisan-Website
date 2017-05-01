@@ -1,1 +1,7 @@
-/node_modules/
+/node_modules
+/API/node_modules
+/API/configUD.js
+/API/configAP.js
+/API/configHTMLGen.js
+/npm-debug.log
+npm-debug.log
