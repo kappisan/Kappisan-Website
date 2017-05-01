@@ -53,7 +53,8 @@ h1, h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 26px;
+    text-align: justify;
 }
 
 .title-bar {
@@ -66,12 +67,27 @@ p {
     z-index: 99;
 }
 
-.services-link {
+#services-link {
     position: absolute;
     right: 40px;
-    top: 60px;
-    color: #fff !important;
+    top: 70px;
+    color: #fff;
     font-size: 36px;
+}
+
+#about-link {
+    position: absolute;
+    right: 240px;
+    top: 70px;
+    color: #fff;
+    font-size: 36px;
+}
+
+#services-link:hover {
+    color: #e6161a;
+}
+#about-link:hover {
+    color: #ffd647;
 }
 
 .main-logo {
@@ -94,6 +110,17 @@ p {
     background-image: url(../img/coding-facebook.png);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.about-box {
+    padding: 20px; 
+    display: inline-block;
+}
+
+.about-box h1,
+.about-box p {
+    width: 100%;
+    margin: 60px 0;
 }
 
 .first-section {
@@ -223,11 +250,6 @@ p {
     left: 250px;
     position: absolute;
     margin-top: 40px;
-    text-align: justify;
-}
-
-.about-company-p {
-    text-align: justify;   
 }
 
 
@@ -235,6 +257,7 @@ p {
 @media (max-width : 1220px) {
 
     .fb-like-section,
+    .about-section,
     .releases-container,
     .about-company-container,
     .about-me-container {
@@ -274,6 +297,7 @@ p {
 @media (min-width : 1220px) {
 
     .fb-like-section,
+    .about-section,
     .releases-container,
     .about-company-container,
     .about-me-container {

@@ -3,6 +3,17 @@
 <!-- parallax picture of computer code -->
 <div class="billboard-section"></div>
 
+<div class="about-section">
+    <h1 class="centered">kappisan</h1>
+    <div class="about-box">
+        <p>Kappisan is a small company that specialises in website design, website development, ecommerce website development, content management systems, conversion optimisation, app development, video production and hosting.</p>
+        
+        <img src="./img/design.png">
+
+        <p>Based in Ipswich, UK, kappisan is a design firm specializing in the development and deployment of custom websites and API's tailored to any business need.</p>
+    </div>
+</div>
+
 <!--<div class="cloth"></div>-->
 <div class="first-section">
 
@@ -21,8 +32,7 @@
             <a href="http://twistfour.com"><figure><img src="./img/twistfour_screenshot.PNG" class="release-thumbnail"></figure></a>
             <div class="release-text">
                 <a href="http://twistfour.com" class="hvr-grow-rotate"><h2 class="release-title">Twist Four</h2></a><br>
-                <p class="release-text">A two player logic game that involes placing squares on rotating blocks.</p><br>
-                <p class="release-text">Play against other players or against the computer AI.</p>
+                <p class="release-text">A two player logic game that involes placing squares on rotating blocks. Play against other players or against the computer AI.</p>
             </div>
         </div>
 
@@ -47,26 +57,4 @@
     </div>
 </div>
 
-<div class="second-section">
-    <div class="about-company-container">
-        <h2 class="hvr-pulse-grow centered">The company</h2>
-
-
-        <p class="about-company-p">Kappisan is a small company that specialises in website design, website development, ecommerce website development, content management systems, conversion optimisation, app development, video production and hosting.</p>
-
-        <p class="about-company-p">Based in Ipswich, UK, kappisan is a design firm specializing in the development and deployment of custom websites and API's tailored to any business need.</p>
-    </div>
-</div>
-
-
-<div class="third-section">
-    <div class="about-me-container">
-        <h2 class="hvr-pulse-grow centered">About Me</h2>
-        <div class="about-me-grid centered">
-            <p class="about-me-p">I like to learn new things and solve really difficult problems. I like the challenge of representing a portion of reality with logical symbols and systems. I have the ability to see patterns in abstract mathematical symbols. I will never substitute reality for elegance, nor will I give the people who use my model false comfort about its accuracy, instead I will make explicit its assumptions and oversights.<br><br>
-
-            Currently living in Ipswich, England. I have a rich portfolio of interactive websites and API's. I have over 6 years professional experience in web development and many more years of hobby experience.</p>
-            <img src="./img/me_and_puggie.jpg" class="me-pic">
-        </div>
-    </div>
-</div>
+<div ng-include="'./templates/components/about-me.html'"></div>
