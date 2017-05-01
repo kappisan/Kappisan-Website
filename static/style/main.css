@@ -47,7 +47,6 @@ a:visited {
 h1, h2 {
     padding: 30px 0;
     font-family: luna;
-    margin: 60px 0;
 }
 
 p {
@@ -69,17 +68,19 @@ p {
 #services-link {
     position: absolute;
     right: 40px;
-    top: 70px;
+    top: 60px;
     color: #fff;
-    font-size: 36px;
+    font-size: 32px;
+    font-family: luna;
 }
 
 #about-link {
     position: absolute;
-    right: 240px;
-    top: 70px;
+    right: 280px;
+    top: 60px;
     color: #fff;
-    font-size: 36px;
+    font-size: 32px;
+    font-family: luna;
 }
 
 #services-link:hover {
@@ -111,15 +112,30 @@ p {
     background-attachment: fixed;
 }
 
-.learn-more {
+.learn-more-button {
     border-radius: 50px;
     width: 400px;
     height: 80px;
-    font-size: 40px;
+    font-size: 32px;
     text-anchor: middle;
-    background-color: #ed1c24;
     color: #fff;
     margin: 40px 0 80px 0;
+    border-width: 0;
+    font-family: luna;
+    padding: 12px;
+}
+
+.learn-more-button {
+    background-color: #ed1c24;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.learn-more-button:hover {
+    cursor: pointer;
+    background-color: #ffd647;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.3s;
 }
 
 .me-pointing {
@@ -147,7 +163,7 @@ p {
 }
 
 .first-section h1 {
-    color: #ed1c24;
+    /*color: #ed1c24;*/
     font-weight: bold;
 }
 
