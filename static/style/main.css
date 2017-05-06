@@ -298,6 +298,7 @@ p {
     .fb-like-section,
     .about-section,
     .releases-container,
+    .pricing-container,
     .about-company-container,
     .about-me-container {
         max-width: 980px;
@@ -338,6 +339,7 @@ p {
     .fb-like-section,
     .about-section,
     .releases-container,
+    .pricing-container,
     .about-company-container,
     .about-me-container {
         max-width: 1180px;

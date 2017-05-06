@@ -4,6 +4,7 @@ var app = angular.module('app', ['ngRoute'])
 			.when('/', { templateUrl: 'templates/home.html' })	
 			.when('/about', { templateUrl: 'templates/about.html' })
 			.when('/services', { templateUrl: 'templates/services.html' })
+			.when('/pricing', { templateUrl: 'templates/pricing.html' })
 			.when('/justynas_christmas_chaos', { templateUrl: 'templates/justynas_christmas_chaos.html' })
 			.otherwise({ redirectTo: '/' });
 	}]);
