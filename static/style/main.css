@@ -8,6 +8,10 @@
     src: url(./Luna.ttf);
 }
 
+@font-face {
+    font-family: blowbrush;
+    src: url(./blowbrush.ttf);
+}
 
 .cool {
   font-family: coolvetica;
@@ -56,19 +60,25 @@ p {
 }
 
 .title-bar {
-    height: 120px;
+    height: 72px;
     top: 0;
     right: 0;
     width: 100%;
     position: fixed;
     background-color: #231f20;
     z-index: 99;
+    border: solid;
+    border-color: #000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 3px;
 }
 
 #services-link {
     position: absolute;
     right: 40px;
-    top: 60px;
+    top: 10px;
     color: #fff;
     font-size: 32px;
     font-family: luna;
@@ -77,7 +87,7 @@ p {
 #about-link {
     position: absolute;
     right: 280px;
-    top: 60px;
+    top: 10px;
     color: #fff;
     font-size: 32px;
     font-family: luna;
@@ -107,9 +117,13 @@ p {
     padding-top: 150px;
     width: 100%;
     height: 500px;
-    background-image: url(../img/coding-facebook.png);
+    /* background-image: url(../img/coding-facebook.png); */
+    background-image: url(../img/chip.jpg);
     background-size: cover;
     background-attachment: fixed;
+    border: solid;
+    border-left: 0;
+    border-right: 0;
 }
 
 .learn-more-button {
@@ -145,6 +159,9 @@ p {
     background-image: url(../img/work-me.png);
     background-size: cover;
     background-attachment: fixed;
+    border: solid;
+    border-left: 0;
+    border-right: 0;
 }
 
 .about-box {
@@ -182,6 +199,10 @@ p {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    border: solid;
+    border-left: 0;
+    border-right: 0;
+    border-color: #000;
 }   
 
 .ad-container {
