@@ -13,6 +13,11 @@
     src: url(./blowbrush.ttf);
 }
 
+@font-face {
+    font-family: HACKED;
+    src: url(./HACKED.ttf);
+}
+
 .cool {
   font-family: coolvetica;
 }
@@ -50,11 +55,15 @@ a:visited {
 
 h1, h2 {
     padding: 30px 0;
-    font-family: luna;
+    font-family: HACKED;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 p {
-    font-size: 26px;
+    font-size: 20px;
     text-align: justify;
     margin: 60px 0;
 }
@@ -241,6 +250,15 @@ p {
     float: left;
 }
 
+.banner-credit {
+    float: right;
+    position: relative;
+    top: -100px;
+    padding-right: 10px;
+    color: #fff !important;
+
+}
+
 #container {
     background-color: #eee;
 }
@@ -376,7 +394,7 @@ p {
     }
 
     .release .release-title {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         padding: 2px 6px;
     }
