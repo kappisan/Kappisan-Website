@@ -2,121 +2,112 @@
 <html>
 <head>
 
-    <link rel='shortcut icon' href='http://www.kappisan.com.s3-website-eu-west-1.amazonaws.com/img/logo5.png' type='image/x-icon'/ >
+	<link rel='shortcut icon' href='http://www.kappisan.com.s3-website-eu-west-1.amazonaws.com/img/logo5.png' type='image/x-icon'/ >
 
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <title>kappisan</title>
-    <meta content="Kappisan,Games" name="keywords">
-    <meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>kappisan</title>
+	<meta content="Kappisan,Games" name="keywords">
+	<meta charset="UTF-8">
 
+	<!-- facebook meta data -->
+	<meta property="og:title" content="kappisan" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.kappisan.com" />
+	<meta property="og:image" content="http://www.kappisan.com/img/logo_rectangle.png" />
 
-    <!-- facebook meta data -->
-    <meta property="og:title" content="kappisan" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.kappisan.com" />
-    <meta property="og:image" content="http://www.kappisan.com/img/logo_rectangle.png" />
+	<!-- twitter meta data -->
+	<meta name="twitter:card" content="kappisan" />
+	<meta name="twitter:site" content="@kappisan_" />
+	<meta name="twitter:creator" content="@kappisan_" />
 
-    <!-- twitter meta data -->
-    <meta name="twitter:card" content="kappisan" />
-    <meta name="twitter:site" content="@kappisan_" />
-    <meta name="twitter:creator" content="@kappisan_" />
+	<meta name="google-site-verification" content="8jA8Q774oAUIXBXNI-FaH0JGsAPz33tm4iwUTyW8Hnw" />
 
-    <meta name="google-site-verification" content="8jA8Q774oAUIXBXNI-FaH0JGsAPz33tm4iwUTyW8Hnw" />
+	<link href="./style/main.css" rel="stylesheet" type="text/css">
+	<link href="./libs/hover.css" rel="stylesheet" media="all">
 
-    <link href="./style/main.css" rel="stylesheet" type="text/css">
-    <link href="./libs/hover.css" rel="stylesheet" media="all">
-
-    <script type="text/javascript" src="./libs/angular.min.js"></script>
-    <script type="text/javascript" src="./libs/angular-route.min.js"></script>
-    <script type="text/javascript" src="./libs/jquery.min.js"></script>
-
+	<script type="text/javascript" src="./libs/angular.min.js"></script>
+	<script type="text/javascript" src="./libs/angular-route.min.js"></script>
+	<script type="text/javascript" src="./libs/jquery.min.js"></script>
 
 </head>
 
 <body ng-app="app" ng-controller="PageCtrl">
 
+	<!-- facebook api stuff -->
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId      : '1552594118383602',
+				xfbml      : true,
+				version    : 'v2.6'
+			});
+		};
 
-    <!-- facebook api stuff -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1552594118383602',
-          xfbml      : true,
-          version    : 'v2.6'
-        });
-      };
+		(function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		 }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- /facebook api stuff -->
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- /facebook api stuff -->
+	<div class="title-bar">
+		<center>
+			<a href="#/"><img class="main-logo" src="./img/longhandwhite.png"></a>
+		</center>
+		<a href="#/">
+		<a href="#/services" id="services-link"><!--Services--> <img src="./img/services-text.png" height="50px"></a>
+		<a href="#/about" id="about-link"><!--About--> <img src="./img/about-text.png" height="50px"></a>
+	</div>
 
+	<div id="container" ng-view></div>
 
-    <div class="title-bar">
-        <center>
-          <a href="#/"><img class="main-logo" src="./img/longhandwhite.png"></a>
-        </center>
-        <a href="#/">
-        <a href="#/services" id="services-link"><!--Services--> <img src="./img/services-text.png" height="50px"></a>
-        <a href="#/about" id="about-link"><!--About--> <img src="./img/about-text.png" height="50px"></a>
-    </div>
+	<div class="ad-container">
+		<!-- google adsense -->
+		<center>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- kappisan -->
+				<ins class="adsbygoogle"
+						 style="display:inline-block;width:728px;height:90px"
+						 data-ad-client="ca-pub-8084366123643219"
+						 data-ad-slot="3159808486"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+		</center>
+	</div>
 
-    <div id="container" ng-view></div>
+	<hr id="footer-hr">
 
+	<div id="footer-section">
+		<center>
+			<div>
+				<a class="social-media-icon hvr-bounce-in" href="https://www.facebook.com/kappisanUK/" target="_blank"><img src="./img/facebook-icon.png"></a>
+				<a class="social-media-icon hvr-bounce-in" href="https://www.linkedin.com/company/kappisan" target="_blank"><img src="./img/linkedin-icon.png"></a>
+				<a class="social-media-icon hvr-bounce-in" href="https://www.youtube.com/channel/UCVGDM4PR19B7upYv_0A8uaA" target="_blank"><img src="./img/youtube-icon.png"></a>
+				<a class="social-media-icon hvr-bounce-in" href="https://twitter.com/kappisan_" target="_blank"><img src="./img/twitter-icon.png"></a>
+			</div>
 
+			<p>kasper.wilkosz@gmail.com</p>
+			<p>copyright kappisan 2013-2017</p>
+		</center>
+	</div>
 
-    <div class="ad-container">
-      <!-- google adsense -->
-      <center>
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- kappisan -->
-          <ins class="adsbygoogle"
-               style="display:inline-block;width:728px;height:90px"
-               data-ad-client="ca-pub-8084366123643219"
-               data-ad-slot="3159808486"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-      </center>
-    </div>
+	<script src="script.js"></script>
 
+	<!-- analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <hr id="footer-hr">
+		ga('create', 'UA-87756054-3', 'auto');
+		ga('send', 'pageview');
 
-    <div id="footer-section">
-        <center>
-          <div>
-              <a class="social-media-icon hvr-bounce-in" href="https://www.facebook.com/kappisanUK/" target="_blank"><img src="./img/facebook-icon.png"></a>
-              <a class="social-media-icon hvr-bounce-in" href="https://www.linkedin.com/company/kappisan" target="_blank"><img src="./img/linkedin-icon.png"></a>
-              <a class="social-media-icon hvr-bounce-in" href="https://www.youtube.com/channel/UCVGDM4PR19B7upYv_0A8uaA" target="_blank"><img src="./img/youtube-icon.png"></a>
-              <a class="social-media-icon hvr-bounce-in" href="https://twitter.com/kappisan_" target="_blank"><img src="./img/twitter-icon.png"></a>
-          </div>
-
-          <p>kasper.wilkosz@gmail.com</p>
-          <p>copyright kappisan 2013-2017</p>
-        </center>
-    </div>
-
-
-<script src="script.js"></script>
-
-<!-- analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-87756054-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+	</script>
 
 </body>
 </html>
