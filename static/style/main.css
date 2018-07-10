@@ -65,7 +65,6 @@ h1 {
 p {
     font-size: 20px;
     text-align: justify;
-    margin: 60px 0;
 }
 
 .title-bar {
@@ -84,33 +83,29 @@ p {
     border-width: 3px;
 }
 
-#services-link {
-    position: absolute;
-    right: 40px;
+.services-link,
+.about-link {
+    float: right;
     top: 10px;
-    color: #fff;
-    font-size: 32px;
+    color: #fff !important;
     font-family: luna;
+    padding-right: 40px;
 }
 
-#about-link {
-    position: absolute;
+.about-link {
     right: 280px;
-    top: 10px;
-    color: #fff;
-    font-size: 32px;
-    font-family: luna;
 }
 
-#services-link:hover {
+.services-link:hover {
     color: #e6161a;
 }
-#about-link:hover {
+.about-link:hover {
     color: #ffd647;
 }
 
 .main-logo {
-  width: 280px;
+  width: 240px;
+  padding: 10px 30px;
 }
 
 
