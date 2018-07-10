@@ -1,0 +1,35 @@
+/* scroll bar */
+
+::-webkit-scrollbar {
+	width: 14px;
+	height: 14px;
+}
+::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+}
+::-webkit-scrollbar-thumb {
+	background: #252525;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #252525;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #252525;
+}
+::-webkit-scrollbar-track {
+	background: #ddd;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+	background: #ddd;
+}
+::-webkit-scrollbar-track:active {
+	background: #ddd;
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
