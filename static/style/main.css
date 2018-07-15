@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: HACKED;
-    src: url(./HACKED.ttf);
+    src: url(./coolvetica.ttf);
 }
 
 .cool {
@@ -31,7 +31,7 @@ body {
     margin: 0;
     padding: 0;
     color: #231f20;
-    min-width: 570px;
+    min-width: 640px;
 }
 
 a {
@@ -61,11 +61,26 @@ h1, h2 {
 
 h1 {
     font-size: 50px;
+    padding: 0;
 }
 
 p {
     font-size: 20px;
     text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 26px;
+    }
+} 
+
+.scroll-container {
+    overflow-y: scroll;
+    height: calc(100% - 75px);
+    position: absolute;
+    top: 74px;
+    width: 100%;
 }
 
 .title-bar {
@@ -129,6 +144,7 @@ p {
     border: solid;
     border-left: 0;
     border-right: 0;
+    border-top: 0;
 }
 
 .learn-more-button {
