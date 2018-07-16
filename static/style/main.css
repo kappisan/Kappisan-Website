@@ -61,19 +61,20 @@ h1, h2 {
 
 h1 {
     font-size: 50px;
-    padding: 0;
+    padding: 20px 0 0 0;
 }
 
 p {
     font-size: 20px;
     text-align: justify;
+    margin: 40px 0;
 }
 
 @media only screen and (max-width: 600px) {
     p {
         font-size: 26px;
     }
-} 
+}
 
 .scroll-container {
     overflow-y: scroll;
@@ -183,16 +184,6 @@ p {
     border: solid;
     border-left: 0;
     border-right: 0;
-}
-
-.about-box {
-    padding: 20px; 
-}
-
-.about-box h1,
-.about-box p {
-    width: 100%;
-    margin: 60px 0;
 }
 
 .first-section {
@@ -342,7 +333,6 @@ p {
 }
 
 
-
 @media (max-width : 1220px) {
 
     .fb-like-section,
@@ -422,4 +412,8 @@ p {
         width: 350px;
     }
 
+}
+
+.releases-container {
+    margin-top: 40px;
 }
