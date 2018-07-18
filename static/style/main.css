@@ -135,6 +135,7 @@ p {
 }
 
 .billboard-section,
+.web-coding-section,
 .app-coding-section {
     padding-top: 150px;
     width: 100%;
@@ -149,6 +150,10 @@ p {
 
 .billboard-section {
     background-image: url(../img/chip.jpg);
+}
+
+.web-coding-section {
+    background-image: url(../img/coding-bg.jpg);
 }
 
 .app-coding-section {
