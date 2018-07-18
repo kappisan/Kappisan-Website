@@ -313,6 +313,7 @@ p {
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    object-fit: fill;
 }
 .release figure:hover img {
     -webkit-transform: scale(1.3);
@@ -414,7 +415,7 @@ p {
 
     .release figure {
         max-width: 350px;
-        height: 280px;
+        height: 240px;
         margin: 0;
         padding: 0;
         overflow: hidden;
