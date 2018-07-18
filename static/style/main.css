@@ -134,18 +134,25 @@ p {
     opacity: 0.2;
 }
 
-.billboard-section {
+.billboard-section,
+.app-coding-section {
     padding-top: 150px;
     width: 100%;
     height: 500px;
-    /* background-image: url(../img/coding-facebook.png); */
-    background-image: url(../img/chip.jpg);
     background-size: cover;
     background-attachment: fixed;
     border: solid;
     border-left: 0;
     border-right: 0;
     border-top: 0;
+}
+
+.billboard-section {
+    background-image: url(../img/chip.jpg);
+}
+
+.app-coding-section {
+    background-image: url(../img/app_coding.png);
 }
 
 .learn-more-button {
