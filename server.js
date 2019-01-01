@@ -3,7 +3,7 @@ const PORT=4444;
 var express = require('express');
 var app = express();
 
-app.use(express.static('./static/'));
+app.use(express.static('./threejs/'));
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
