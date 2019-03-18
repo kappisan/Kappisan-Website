@@ -135,6 +135,7 @@ p {
 }
 
 .billboard-section,
+.game-dev-section,
 .web-coding-section,
 .app-coding-section {
     padding-top: 150px;
@@ -150,6 +151,12 @@ p {
 
 .billboard-section {
     background-image: url(../img/chip.jpg);
+}
+
+.game-dev-section {
+    background-image: url(../img/v40_vaporwave.png);
+    background-position: center; 
+    height: 700px;
 }
 
 .web-coding-section {
