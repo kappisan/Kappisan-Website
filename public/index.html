@@ -55,11 +55,33 @@
       <link rel="alternate" type="application/json+oembed" href="">
       <link rel="alternate" type="text/xml+oembed" href="">
 
+      <script type="text/javascript" src="./jquery.min.js"></script>
+
       <!-- font awesome -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
    </head>
-   <body class="page-template page-template-template-request-a-demo page-template-template-request-a-demo-php page page-id-7244 page-request-a-demo request-a-demo request-a-demo-template">
+   <body class="page page-request-a-demo request-a-demo request-a-demo-template">
+
+      <!-- facebook api stuff -->
+      <script>
+         window.fbAsyncInit = function() {
+            FB.init({
+               appId      : '1552594118383602',
+               xfbml      : true,
+               version    : 'v2.6'
+            });
+         };
+
+         (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <!-- /facebook api stuff -->
 
       <!-- top header -->
       <div class="top-bar" style="width: 100%; position: fixed;">
@@ -71,16 +93,6 @@
                   <ul class="secondary-header-links">
                      <li><a href="https://www.facebook.com/kappisanUK/" target="_blank">Facebook</a></li>
                      <li><a href="https://www.linkedin.com/company/kappisan" target="_blank">LinkedIn</a></li>
-                  </ul>
-                  <ul class="social-links">
-                     <li>
-                        <a target="_blank" href="https://www.facebook.com/kappisanUK/" title="Facebook" class="Facebook">
-                        </a>
-                     </li>
-                     <li>
-                        <a target="_blank" href="https://www.linkedin.com/company/kappisan" title="LinkedIn" class="LinkedIn">
-                        </a>
-                     </li>
                   </ul>
                </div>
                <div class="mobile-nav">
@@ -103,10 +115,12 @@
             <!-- /.top-bar__right -->
          </div>
       </div>
+      <img id="header-logo" src="images/logo5.png">
+
       <!-- /.top-bar -->
 
       <div class="lead-content" style="padding-top: 100px;">
-         <!-- content starts -->
+
          <div class="content-wrapper">
             <div id="main-title">
                <div class="container">
@@ -117,7 +131,6 @@
                </div>
             </div>
          </div>
-         <!-- /.content-wrapper -->
       </div>
       <!-- /.lead-content -->
 
@@ -174,7 +187,6 @@
             </div>
 
          </div>
-         <!-- /.container -->
       </div>
 
       <div class="content-wrapper what-we-do-bottom" style="padding-top: 100px;">
@@ -199,7 +211,53 @@
             </div>
 
          </div>
-         <!-- /.container -->
+      </div>
+
+      <!-- GET IN TOUCH -->
+      <div class="content-wrapper" style="padding: 100px 0;">
+         <div class="container">
+
+            <h2>GET IN TOUCH</h2>
+
+            <form id="contact-form">
+               <table style="width: 100%">
+                  <tr>
+                     <td><label>name</label></td>
+                     <td><input id="contact-name" type="text"></td>
+                  </tr>
+                  <tr>
+                     <td><label>email</label></td>
+                     <td><input id="contact-email" type="email"></td>
+                  </tr>
+                  <tr>
+                     <td><label>message</label></td>
+                     <td><textarea id="contact-message"></textarea></td>
+                  </tr>
+               </table>
+
+               <div>
+                  <button type="submit" onclick="sendMessage(event)">SEND MESSAGE</button>
+               </div>
+            </form>
+
+            <h2 id="send-message-spinner" style="display: none; margin: 60px;"><i class="fas fa-spinner fa-spin"></i></h2>
+
+            <h3 id="send-confirmation" style="margin: 100px; display: none;"></h3>
+
+         </div>
+      </div>
+
+      <div style="margin: 20px; text-align: center;">
+         <div class="fb-like-section">
+            <div class="fb-like-container">
+               <div
+                  class="fb-like"
+                  data-share="true"
+                  data-width="450"
+                  data-show-faces="true">
+               </div>
+            </div>
+         </div>
       </div>
 
       <!-- /.content-wrapper -->
@@ -208,9 +266,9 @@
             <div class="container">
                <div class="section section--main">
                   <div class="logo"></div>
-                  <p class="segment">
-                     12 I turned around to see the voice that was speaking to me. And when I turned I saw seven golden lampstands, 13 and among the lampstands was someone like a son of man,[d] dressed in a robe reaching down to his feet and with a golden sash around his chest. 14 The hair on his head was white like wool, as white as snow, and his eyes were like blazing fire. 15 His feet were like bronze glowing in a furnace, and his voice was like the sound of rushing waters. 16 In his right hand he held seven stars, and coming out of his mouth was a sharp, double-edged sword. His face was like the sun shining in all its brilliance.
-                  </p>
+                  <p>Kappisan is a software company that specialises in web technology, cloud infrastructure, app development and blockchain.</p>
+
+                  <p>Based in Ipswich, UK, Kappisan is a sole trader company specializing in the development and deployment of custom websites and API's tailored to any business need.</p>
                   <ul class="terms segment" style="display: none">
                      <li>
                         <a href="" title="Terms and conditions">Terms and conditions</a>
@@ -245,12 +303,12 @@
                   <h3>Contact</h3>
                   <div class="segment">
                      <p>
-                        T: <a href="tel://+44 7786050312" title="Call us on +44 7786050312">020 7801 9875</a>
+                        <i class="fas fa-phone"></i> &nbsp; <a href="tel://+44 7786050312" title="Call us on +44 7786050312">020 7801 9875</a>
                      </p>
                   </div>
                   <div class="segment">
                      <p>
-                        E: <a href="mailto:info@kappisan.com">info@kappisan.com</a>
+                        <i class="fas fa-at"></i> &nbsp; <a href="mailto:info@kappisan.com">info@kappisan.com</a>
                      </p>
                   </div>
                </div>
@@ -272,5 +330,71 @@
          </div>
          <!-- /.content-wrapper -->
       </footer>
+
+      <!-- analytics -->
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-87756054-3', 'auto');
+         ga('send', 'pageview');
+
+      </script>
+
+      <!-- send contact form -->
+      <script>
+
+         function sendMessage(e) {
+           console.log("SEND MESSAGE", e);
+          e.preventDefault();
+
+          var data = {
+             name: $('#contact-name').val(),
+             email: $('#contact-email').val(),
+             message: $('#contact-message').val(),
+           };
+
+           console.log("this is payload", data);
+
+            $("#contact-form").hide();
+
+            $("#send-message-spinner").show();
+
+            function messageFailed() {
+               $("#send-confirmation").show();
+               $("#send-confirmation").html("An error occured");
+               $("#send-message-spinner").hide();
+            }
+
+            $.ajax({
+               type: "POST",
+               url : 'https://my1vlfkbwj.execute-api.us-east-1.amazonaws.com/v1/contact',
+               dataType: "json",
+               crossDomain: "true",
+               contentType: "application/json; charset=utf-8",
+               data: JSON.stringify(data),
+               success: function (data) {
+
+                  console.log("Successfull", data);
+                  if (data == "success") {
+
+                     $("#send-confirmation").show();
+                     $("#send-confirmation").html("Message sent successfully");
+                     $("#send-message-spinner").hide();
+                  } else {
+                     console.log("UnSuccessfull");
+                     messageFailed();
+                  }
+               },
+               error: function () {
+                  console.log("UnSuccessfull");
+                  messageFailed();
+               }});
+
+         }
+      </script>
+
    </body>
 </html>

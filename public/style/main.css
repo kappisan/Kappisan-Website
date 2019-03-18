@@ -60,10 +60,7 @@ table{
     border-collapse:collapse;
     border-spacing:0
 }
-input{
-    outline:none;
-    border:0
-}
+
 html{
     font-size:62.5%
 }
@@ -100,6 +97,15 @@ body:before{
         height:530px
     }
 }
+#header-logo {
+    width: 40px;
+    position: fixed;
+    right: 0;
+    margin: 6px;
+    z-index: 99999;
+    filter: brightness(20);
+}
+
 body.page-template-default:before,body.page-template-template-contact:before,body.request-a-demo-template:before,body.single-resources:before,body.sitedoctor-template-default:before,body.staff-index:before,body.unindexed-template-default:before{
     background:url(../images/shapes/background_top_white.svg) bottom no-repeat;
     background-size:cover
@@ -194,6 +200,33 @@ a,a:link,a:visited{
     clear:both;
     content:""
 }
+
+#contact-form {
+    max-width: 800px;
+    margin: auto;
+}
+#contact-form label {
+    width: 160px;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+}
+
+#contact-form td {
+    padding: 10px;
+}
+
+#contact-form button {
+    background: linear-gradient(45deg, #3f5586, #784662);
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    margin: 20px;
+}
+
 .content-wrapper{
     margin:0 auto;
     overflow:hidden;
@@ -738,7 +771,7 @@ body.blog footer{
 }
 
 footer a,footer a:link,footer a:visited{
-    color:#60e3ff
+    color: #cac3ff
 }
 .the-post blockquote footer p,footer .the-post blockquote p,footer h3{
     font-size:2rem;
