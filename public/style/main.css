@@ -52,7 +52,8 @@ body{
     font-weight:400;
     line-height:2.4rem;
     -webkit-font-smoothing:antialiased;
-    position:relative
+    position: absolute;
+    left: 0;
 }
 body:before{
     content:"";
