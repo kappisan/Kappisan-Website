@@ -1,85 +1,167 @@
-.movingtruck i {
 
-	position: relative;
+/* BOB */
 
-	-webkit-transition: all 3s ease-out;
-	-moz-transition: all 3s ease-out;
-	-ms-transition: all 3s ease-out;
-	-o-transition: all 3s ease-out;
-	transition: all 3s ease-out;
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+}
+.hvr-bob h1 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover h1, .hvr-bob:focus h1, .hvr-bob:active h1 {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
 
-.movingtruck:hover i {
 
-	-webkit-transform: translate(-150px,0);
-	-moz-transform: translate(-150px,0);
-	-o-transform: translate(-150px,0);
-	-ms-transform: translate(-150px,0);
-
-	-webkit-transition-delay: 1.2s;     
-	-moz-transition-delay: 1.2s; 
-	-ms-transition-delay: 1.2s;     
-	-o-transition-delay: 1.2s;
-	transition-delay: 1.2s;   
+/* Underline From Left */
+.hvr-underline-from-left h3 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left h3:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #3f5586, #784662);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover h3:before,
+.hvr-underline-from-left:focus h3:before,
+.hvr-underline-from-left:active h3:before {
+  right: 0;
 }
 
-.shaking:hover i {
-	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 1000px;
+
+
+/* button shine */
+.btnShine {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.pulseing:hover i {
-	animation-name: pulse_animation;
-	animation-duration: 2000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+.btnShine {
+  background: #333;
+  border: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+  overflow: hidden;
 }
-
-.twisting:hover i {
-	animation-name: twist_animation;
-	animation-duration: 1000ms;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+.btnShine:focus {
+  outline: 0;
 }
-
-@keyframes shake {
-	10%, 90% {
-		transform: translate3d(-1px, 0, 0);
-	}
-	
-	20%, 80% {
-		transform: translate3d(2px, 0, 0);
-	}
-
-	30%, 50%, 70% {
-		transform: translate3d(-4px, 0, 0);
-	}
-
-	40%, 60% {
-		transform: translate3d(4px, 0, 0);
-	}
+.btnShine:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
 }
-
-@keyframes pulse_animation {
-	0% { transform: scale(1); }
-	10% { transform: scale(0.92); }
-	20% { transform: scale(1); }
-	30% { transform: scale(1.08); }
-	40% { transform: scale(1); }
-	50% { transform: scale(0.92); }
-	60% { transform: scale(1); }
-	70% { transform: scale(1.08); }
-	80% { transform: scale(1); }
-	80% { transform: scale(0.92); }
-	100% { transform: scale(1); }
+.btnShine:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
 }
-
-@keyframes twist_animation {
-	0% { transform: rotate(0deg); }
-	25% { transform: rotate(10deg); }
-	75% { transform: rotate(-10deg); }
-	100% { transform: rotate(0deg); }
+.btnShine.shine, .btnShine:hover {
+  background: #338033;
+  cursor: pointer;
+}
+.btnShine.shine:before, .btnShine:hover:before {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+.btnShine.shine:after, .btnShine:hover:after {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  -webkit-transition: .7s;
+  transition: .7s;
 }
