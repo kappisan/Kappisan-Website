@@ -1,0 +1,85 @@
+.movingtruck i {
+
+	position: relative;
+
+	-webkit-transition: all 3s ease-out;
+	-moz-transition: all 3s ease-out;
+	-ms-transition: all 3s ease-out;
+	-o-transition: all 3s ease-out;
+	transition: all 3s ease-out;
+}
+
+.movingtruck:hover i {
+
+	-webkit-transform: translate(-150px,0);
+	-moz-transform: translate(-150px,0);
+	-o-transform: translate(-150px,0);
+	-ms-transform: translate(-150px,0);
+
+	-webkit-transition-delay: 1.2s;     
+	-moz-transition-delay: 1.2s; 
+	-ms-transition-delay: 1.2s;     
+	-o-transition-delay: 1.2s;
+	transition-delay: 1.2s;   
+}
+
+.shaking:hover i {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+.pulseing:hover i {
+	animation-name: pulse_animation;
+	animation-duration: 2000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.twisting:hover i {
+	animation-name: twist_animation;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes shake {
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+	
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	10% { transform: scale(0.92); }
+	20% { transform: scale(1); }
+	30% { transform: scale(1.08); }
+	40% { transform: scale(1); }
+	50% { transform: scale(0.92); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.08); }
+	80% { transform: scale(1); }
+	80% { transform: scale(0.92); }
+	100% { transform: scale(1); }
+}
+
+@keyframes twist_animation {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(10deg); }
+	75% { transform: rotate(-10deg); }
+	100% { transform: rotate(0deg); }
+}
