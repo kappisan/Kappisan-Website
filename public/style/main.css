@@ -595,6 +595,10 @@ footer {
     margin-top:5rem
 }
 
+#footer-logo {
+    width: 100px;
+}
+
 @media screen and (min-width:992px) {
     footer{
         padding:17rem 0 10rem
@@ -620,7 +624,8 @@ footer a,footer a:link,footer a:visited{
 }
 footer p{
     font-size:1.6rem;
-    max-width:460px
+    padding: 20px;
+    margin: auto;
 }
 footer .container{
     padding:0 2.8rem
@@ -632,6 +637,7 @@ footer .section{
 }
 footer h3 {
     color: #cac3ff;
+    margin-top: 80px;
 }
 
 @media screen and (min-width:600px){
